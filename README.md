@@ -388,7 +388,16 @@ The HTML template includes CSP headers for secure media loading:
 
 ## 📄 License
 
-This project is licensed under UNLICENSED - see the package.json file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+### Key License Features:
+- ✅ **Commercial Use** - Use in commercial projects
+- ✅ **Modification** - Modify and distribute changes
+- ✅ **Distribution** - Distribute original or modified versions
+- ✅ **Patent Grant** - Protection against patent litigation
+- ✅ **Private Use** - Use privately without restriction
+- ⚠️ **Attribution Required** - Must include copyright notice and license
+- ⚠️ **State Changes** - Must document significant changes
 
 ## 🔗 Resources
 

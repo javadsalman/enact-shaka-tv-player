@@ -16,7 +16,7 @@
 		"test-watch": "enact test --watch",
 		"build": "enact pack -p && npx webpack"
 	},
-	"license": "UNLICENSED",
+	"license": "Apache-2.0",
 	"private": true,
 	"repository": "",
 	"engines": {
