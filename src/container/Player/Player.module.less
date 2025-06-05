@@ -1,0 +1,55 @@
+.PlayerPage {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'poppins';
+	overflow: hidden;
+}
+
+.NextButtonWrapper {
+	position: absolute;
+	bottom: 40%;
+	right: 3%;
+
+	.NextButton {
+		visibility: hidden;
+		opacity: 0;
+		transition-duration: 2s;
+	}
+	.CloseNextButton {
+		visibility: hidden;
+		opacity: 0;
+		transition-duration: 2s;
+	}
+}
+
+.NextButtonwrapperActive {
+	.NextButton {
+		visibility: visible;
+		opacity: 1;
+		transition-duration: 1s;
+	}
+	.CloseNextButton {
+		visibility: visible;
+		opacity: 1;
+		transition-duration: 1s;
+	}
+}
+
+.WatermarkWrapper {
+	z-index: 100;
+	position: absolute;
+	display: none;
+	.Watermark {
+		opacity: 0.3;
+		font-size: 60px;
+	}
+}
+
+.PlayerSpinner {
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
