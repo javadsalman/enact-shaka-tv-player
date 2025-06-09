@@ -171,23 +171,23 @@ function Player(props) {
 				},
 			}
 
-if (isDRM) {
-	if (drmType === 'widevine') {
-		config.drm = {
-			servers: {
-				'com.widevine.alpha': drmLicenseKey
+			if (isDRM) {
+				if (drmType === 'widevine') {
+					config.drm = {
+						servers: {
+							'com.widevine.alpha': drmLicenseKey
+						}
+					}
+				} else if (drmType === 'playready') {
+					config.drm = {
+						servers: {
+							'com.microsoft.playready': drmLicenseKey
+						}
+					}
+				} else {
+					throw new Error('Invalid DRM type. Only widevine and playready are supported.');
+				}
 			}
-		}
-	} else if (drmType === 'playready') {
-		config.drm = {
-			servers: {
-				'com.microsoft.playready': drmLicenseKey
-			}
-		}
-	} else {
-		throw new Error('Invalid DRM type. Only widevine and playready are supported.');
-	}
-}
 
 			player.configure(config);
             loadVideo({player, video, url, timeout: 5000}).catch((error) => {
